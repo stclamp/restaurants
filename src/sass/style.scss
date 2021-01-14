@@ -1,0 +1,17 @@
+@import "libs/normalize";
+@import "libs/fonts";
+
+* {
+    box-sizing: border-box;
+
+    &::before {
+        box-sizing: border-box;
+    }
+
+    &::after {
+        box-sizing: border-box;
+    }
+
+}
+
+@import "blocks/header";
