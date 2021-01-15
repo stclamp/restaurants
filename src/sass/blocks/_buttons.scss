@@ -1,0 +1,29 @@
+.btn {
+    background-color: $main-color;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+        border: 2px solid $main-color;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    &_main {
+        margin-right: 40px;
+        border: 2px solid $main-color;
+        background-color: rgba(0, 0, 0, 0);
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 16px;
+
+        &:hover {
+            background-color: $main-color;
+            border: none;
+        }
+    }
+}

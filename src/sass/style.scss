@@ -1,5 +1,7 @@
 @import "libs/normalize";
 @import "libs/fonts";
+@import "base/variables";
+
 
 * {
     box-sizing: border-box;
@@ -14,4 +16,13 @@
 
 }
 
-@import "blocks/header";
+.container {
+    width: 1130px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@import "blocks/promo";
+@import "blocks/buttons";
+
+@import "base/media";
