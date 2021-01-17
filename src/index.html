@@ -1,59 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RestaurantBD</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css"
+    />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<body>
-    <section class="promo">
+  <body>
+    <div class="promo">
+      <div class="container">
+        <header class="promo__header">
+          <img src="img/icons/logo.png" alt="logo" class="promo__logo" />
+          <div class="promo__welcome">
+            Wellcome To <a href="#">restaurantBD.com</a>
+          </div>
+          <form action="search" method="get" class="promo__search">
+            <input name="s" placeholder="Quick Search" type="search" />
+            <button type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+          <div class="promo__login">
+            <button class="sign_in"><i class="fas fa-sign-in-alt"></i></button
+            >Login
+          </div>
+          <div class="promo__tel">
+            For Delivary : <a href="tel:687457658790">687 457 6587-90</a>
+          </div>
+        </header>
+      </div>
+      <nav class="promo__nav">
         <div class="container">
-            <header class="promo__header">
-                <img src="img/icons/logo.png" alt="logo" class="promo__logo">
-                <div class="promo__welcome">Wellcome To <a href="#">restaurantBD.com</a> </div>
-                <form action="" method="get" class="promo__search">
-                    <input name="s" placeholder="Quick Search" type="search">
-                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </form>
-                <div class="promo__login"><button class="sign_in"><i class="fas fa-sign-in-alt"></i></button>Login</div>
-                <div class="promo__tel">For Delivary : <a href="tel:687457658790">687 457 6587-90</a></div>
-            </header>
+          <div class="promo__nav_wrapper">
+            <ul class="promo__list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Page</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <button class="promo__reservation">Reservation</button>
+          </div>
         </div>
-        <nav class="promo__nav">
-            <div class="container">
-                <div class="promo__nav_wrapper">
-                    <ul class="promo__list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    <button class="promo__reservation">Reservation</button>
-                </div>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="promo__subtitle">RestaurantBD is the name of pure food</div>
-            <div class="promo__title">We Provide 100% Pure & Healthy Food</div>
-            <div class="promo__descr">when an unknown printer took a galley of type and scrambled it to make a type
-                specimen book. It <br> has survived not only five centuries, but also the leap into electronic
-                typesetting,
-                remaining<br> essentially unchanged. It was popularised in the 1960s.</div>
-            <div class="button_wrapper">
-                <button class="btn btn_main">About us</button>
-                <button class="btn btn_main">See Menu</button>
-            </div>
+      </nav>
+      <div class="container">
+        <div class="promo__subtitle">RestaurantBD is the name of pure food</div>
+        <div class="promo__title">We Provide 100% Pure & Healthy Food</div>
+        <div class="promo__descr">
+          when an unknown printer took a galley of type and scrambled it to make
+          a type specimen book. It <br />
+          has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining<br />
+          essentially unchanged. It was popularised in the 1960s.
         </div>
+        <div class="button_wrapper">
+          <button class="btn btn_main">About us</button>
+          <button class="btn btn_main">See Menu</button>
+        </div>
+      </div>
+    </div>
+    <section class="wellcome">
+      <div class="container">
+        <div class="wellcome__wrapper">
+          <div class="wellcome__introduce">
+            <h2 class="wellcome__title">Wellcome</h2>
+            <h3 class="wellcome__subtitle">To Our Resturant</h3>
+            <img
+              src="img/icons/wellcome_shape.png"
+              alt=""
+              class="wellcome__shape"
+            />
+            <p class="wellcome__text">
+              There are many variations of passages of Loretend to repeat
+              predefined chunks as youm IInjected humour, or randomised words
+              which don't look even slightly believable. If psum available, but
+              the majority have suffered alteration in some form.<br /><br />
+              Injected humour, or randomised words which don't look evethe
+              Internet tend to repeat predefined chunks as necessary, making
+              this the first n slightly believable. If you are going to use a
+              passage of Lorem Ipsum, you need to be sure there isn't tend to
+              repeat predefined chunks as youon the Internet tend to repeat
+              predefined chunks as necessary, making this the first true
+              generator on the Internet.
+            </p>
+            <div class="wellcome__signature">
+              Matthew T. Sloan<br />
+              <span>Founder & Owner</span>
+            </div>
+          </div>
+          <div class="wellcome__book-table">
+            <h3 class="wellcome__subtitle-book">Book Table</h3>
+            <form action="form" class="wellcome__form">
+              <input
+                name="name"
+                type="text"
+                placeholder="Your Name*"
+                required
+              />
+              <select name="people" id="people">
+                <option value="">Total people</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+              </select>
+              <input
+                name="date"
+                type="text"
+                id="datepicker"
+                placeholder="Date :"
+              />
+              <input
+                type="text"
+                class="timepicker"
+                id="time"
+                placeholder="Time: "
+              />
+              <select name="table" id="table">
+                <option value="">Table No</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+              </select>
+              <button class="wellcome__button-submit">Book Now.</button>
+              <img
+                src="img/wellcome/leaves.png"
+                alt=""
+                class="wellcome__leaves"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
+    <section class="feature">
+      <div class="container">
+        <h3 class="feature__subtitle">Our Restarent Provide</h3>
+        <h2 class="feature__title">Feature Item</h2>
+        <img
+          src="img/feature_item/feature_shape.png"
+          alt="shape"
+          class="feature__shape"
+        />
+        <div class="owl-carousel owl-height">
+          <div><img src="img/feature_item/combo.png" alt="" /></div>
+          <div><img src="img/feature_item/burger.png" alt="" /></div>
+          <div><img src="img/feature_item/ribs.png" alt="" /></div>
+          <div><img src="img/feature_item/chisper.png" alt="" /></div>
+          <div><img src="img/feature_item/sandwich.png" alt="" /></div>
+          <div><img src="img/feature_item/platter.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

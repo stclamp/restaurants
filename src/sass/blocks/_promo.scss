@@ -1,210 +1,204 @@
 .promo {
-    background: url('../img/bg/main_bg.jpg') center center/cover no-repeat;
-    min-height: 930px;
-    padding: 30px 0 230px 0;
+  background: url("../img/bg/main_bg.jpg") center center/cover no-repeat;
+  min-height: 100vh;
+  padding: 30px 0 230px 0;
+  position: relative;
+  z-index: 3;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    z-index: 6;
+  }
+
+  &__welcome {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 7px;
+
+    a {
+      color: $main-color;
+      text-decoration: none;
+    }
+  }
+
+  &__search {
     position: relative;
-    z-index: 3;
+    margin-left: 100px;
 
-    &__header {
-        display: flex;
-        justify-content: space-between;
+    input {
+      background-color: #bebdba;
+      border: none;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      width: 170px;
+      height: 27px;
+      margin: 0;
+      padding: 10px 15px;
+      font-size: 14px;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 600;
     }
 
-    &__logo {
-        z-index: 6;
+    button {
+      background-color: $main-color;
+      position: absolute;
+      border: none;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      height: 27px;
+      cursor: pointer;
     }
+  }
 
-    &__welcome {
-        font-family: 'Poppins', sans-serif;
-        font-size: 14px;
-        color: #fff;
-        margin-top: 7px;
+  &__login {
+    margin-left: 90px;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+  }
 
-        a {
-            color: $main-color;
-            text-decoration: none;
-        }
+  &__tel {
+    margin-top: 7px;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
     }
+  }
 
-    &__search {
-        position: relative;
-        margin-left: 100px;
+  &__nav {
+    background: #fff;
+    min-height: 60px;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    top: 80px;
+    left: 0;
+  }
 
-        input {
-            background-color: #bebdba;
-            border: none;
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-            width: 170px;
-            height: 27px;
-            margin: 0;
-            padding: 10px 15px;
-            font-size: 14px;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-weight: 600;
-        }
+  &__nav_wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-        button {
-            background-color: $main-color;
-            position: absolute;
-            border: none;
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
-            height: 27px;
-            cursor: pointer;
-        }
-    }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
 
+    li {
+      margin-top: 7px;
+      margin-right: 34px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-family: "Source Sans Pro";
+      font-weight: 700;
 
-    &__login {
-        margin-left: 90px;
-        margin-top: 5px;
-        color: #fff;
-        font-size: 14px;
-        font-family: 'Poppins', sans-serif;
-    }
-
-    &__tel {
-        margin-top: 7px;
-        font-family: 'Poppins', sans-serif;
-        color: #fff;
-        font-size: 14px;
-        font-weight: 400;
-
-        a {
-            color: #fff;
-            text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-            font-size: 14px;
-        }
-    }
-
-    &__nav {
-        background: #fff;
-        min-height: 60px;
-        position: absolute;
-        width: 100%;
-        z-index: 5;
-        top: 80px;
-        left: 0;
-    }
-
-    &__nav_wrapper {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    &__list {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        list-style-type: none;
-
-        li {
-            margin-top: 7px;
-            margin-right: 34px;
-            text-transform: uppercase;
-            font-size: 14px;
-            font-family: 'Source Sans Pro';
-            font-weight: 700;
-
-            a {
-                color: #000;
-                text-decoration: none;
-
-                &:hover {
-                    color: $main-color;
-                }
-            }
-
-        }
-    }
-
-    &__reservation {
-        display: flex;
-        align-self: center;
-        justify-content: center;
-        background-color: $main-color;
-        border: none;
-        font-family: 'Source Sans Pro';
-        font-weight: 700;
-        font-size: 14px;
-        color: #fff;
-        text-align: center;
-        text-transform: uppercase;
-        border-bottom-left-radius: 5px;
-        border-top-right-radius: 5px;
-        width: 120px;
-        height: 25px;
-        padding: 8px 0 25px 0;
-        cursor: pointer;
+      a {
+        color: #000;
+        text-decoration: none;
 
         &:hover {
-            border: 2px solid $main-color;
-            background-color: rgba(0, 0, 0, 0);
-            color: #000;
+          color: $main-color;
         }
-
+      }
     }
+  }
 
-    &__subtitle {
-        margin-top: 220px;
-        font-family: 'Sacramento';
-        font-size: 36px;
-        color: #00c5d2;
-        text-align: center;
+  &__reservation {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-color: $main-color;
+    border: none;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 120px;
+    height: 25px;
+    padding: 8px 0 25px 0;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid $main-color;
+      background-color: rgba(0, 0, 0, 0);
+      color: #000;
     }
+  }
 
-    &__title {
-        margin-top: 20px;
-        font-family: 'Lobster Two';
-        font-size: 48px;
-        line-height: 48px;
-        font-weight: 700;
-        color: #fff;
-        text-align: center;
-    }
+  &__subtitle {
+    margin-top: 220px;
+    font-family: "Sacramento";
+    font-size: 36px;
+    color: #00c5d2;
+    text-align: center;
+  }
 
-    &__descr {
-        margin-top: 20px;
-        font-family: 'Poppins';
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 28px;
-        color: #fff;
-        text-align: center;
-    }
+  &__title {
+    margin-top: 20px;
+    font-family: "Lobster Two";
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+  }
 
+  &__descr {
+    margin-top: 20px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    text-align: center;
+  }
 
+  .button_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
 
-    .button_wrapper {
-        display: flex;
-        justify-content: center;
-        margin-top: 60px;
-    }
+  // FontAwesome
+  .sign_in {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
 
-    // FontAwesome
-    .sign_in {
-        background-color: rgba(0, 0, 0, 0);
-        border: none;
+  .fa-search {
+    color: #fff;
+    font-size: 12px;
+  }
 
-    }
+  .fa-sign-in-alt {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 8px;
+  }
 
-    .fa-search {
-        color: #fff;
-        font-size: 12px;
-    }
-
-    .fa-sign-in-alt {
-        color: #fff;
-        font-size: 16px;
-        margin-right: 8px;
-    }
-
-    .fa-shopping-cart {
-        display: flex;
-        align-self: center;
-        margin-right: 34px;
-        cursor: pointer;
-    }
+  .fa-shopping-cart {
+    display: flex;
+    align-self: center;
+    margin-right: 34px;
+    cursor: pointer;
+  }
 }

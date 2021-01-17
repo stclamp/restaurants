@@ -1,0 +1,29 @@
+.feature {
+  padding: 45px 0 257px 0;
+  &__subtitle {
+    text-align: center;
+    color: $main-color;
+    font-family: Sacramento;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0;
+  }
+  &__title {
+    text-align: center;
+    color: #222222;
+    font-family: "Lobster Two";
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 10px;
+  }
+  &__shape {
+    display: block;
+    margin: 11px auto 0 auto;
+  }
+}
+
+// .owl-carousel {
+//   display: flex;
+//   flex-direction: row;
+// }

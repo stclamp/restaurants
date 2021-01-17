@@ -2,27 +2,27 @@
 @import "libs/fonts";
 @import "base/variables";
 
-
 * {
+  box-sizing: border-box;
+
+  &::before {
     box-sizing: border-box;
+  }
 
-    &::before {
-        box-sizing: border-box;
-    }
-
-    &::after {
-        box-sizing: border-box;
-    }
-
+  &::after {
+    box-sizing: border-box;
+  }
 }
 
 .container {
-    width: 1130px;
-    padding: 0 20px;
-    margin: 0 auto;
+  width: 1130px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 @import "blocks/promo";
 @import "blocks/buttons";
+@import "blocks/wellcome";
+@import "blocks/feature";
 
 @import "base/media";
