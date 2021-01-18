@@ -1,5 +1,6 @@
 .feature {
   padding: 45px 0 257px 0;
+  position: relative;
   &__subtitle {
     text-align: center;
     color: $main-color;
@@ -21,9 +22,42 @@
     display: block;
     margin: 11px auto 0 auto;
   }
-}
+  &__inner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    div {
+      img {
+        width: 270px;
+        height: 230px;
+      }
+    }
+  }
+  .prev,
+  .next {
+    position: absolute;
+    top: 265px;
+    // transform: translateY(100%);
+    left: 25px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    img {
+      width: 56px;
+      height: 56px;
+    }
+  }
+  .next {
+    left: auto;
+    right: 25px;
+    background: transparent;
+  }
 
-// .owl-carousel {
-//   display: flex;
-//   flex-direction: row;
-// }
+  .tns-item {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
