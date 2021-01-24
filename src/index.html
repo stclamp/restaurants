@@ -20,7 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
     />
-    />
+    <link rel="stylesheet" href="css/accordion.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -172,23 +172,400 @@
       <div class="feature__inner">
         <div>
           <img src="img/feature_item/combo.png" alt="" />
+          <div class="feature__inner_title">Smokehouse Combo</div>
+          <div class="feature__inner_price-wrapper">
+            <div class="feature__inner_price">8.50$</div>
+            <div class="feature__inner_old-price">10.60$</div>
+          </div>
         </div>
-        <div><img src="img/feature_item/burger.png" alt="" /></div>
-        <div><img src="img/feature_item/ribs.png" alt="" /></div>
-        <div><img src="img/feature_item/chisper.png" alt="" /></div>
-        <div><img src="img/feature_item/sandwich.png" alt="" /></div>
-        <div><img src="img/feature_item/platter.png" alt="" /></div>
+        <div>
+          <img src="img/feature_item/burger.png" alt="" />
+          <div class="feature__inner_title">Chicken Burger</div>
+          <div class="feature__inner_price-wrapper">
+            <div class="feature__inner_price">6.50$</div>
+            <div class="feature__inner_old-price">8.60$</div>
+          </div>
+        </div>
+        <div>
+          <img src="img/feature_item/ribs.png" alt="" />
+          <div class="feature__inner_title">Ribs & Stickes</div>
+          <div class="feature__inner_price-wrapper">
+            <div class="feature__inner_price">11.80$</div>
+            <div class="feature__inner_old-price">15.60$</div>
+          </div>
+        </div>
+        <div>
+          <img src="img/feature_item/chisper.png" alt="" />
+          <div class="feature__inner_title">Chicken Crisper</div>
+          <div class="feature__inner_price-wrapper">
+            <div class="feature__inner_price">9.50$</div>
+            <div class="feature__inner_old-price">11.80$</div>
+          </div>
+        </div>
+        <div>
+          <img src="img/feature_item/sandwich.png" alt="" />
+          <div class="feature__inner_title">Chicken Sandwich</div>
+          <div class="feature__inner_price-wrapper">
+            <div class="feature__inner_price">12.50$</div>
+            <div class="feature__inner_old-price">18.60$</div>
+          </div>
+        </div>
+        <div>
+          <img src="img/feature_item/platter.png" alt="" />
+          <div class="feature__inner_title">Party Platter</div>
+          <div class="feature__inner_price-wrapper">
+            <div class="feature__inner_price">21.50$</div>
+            <div class="feature__inner_old-price">28.60$</div>
+          </div>
+        </div>
       </div>
       <button type="button" class="prev">
-        <img src="img/feature_item/prev.png" />
+        <img src="img/feature_item/prev.png" alt="prev" />
       </button>
       <button type="button" class="next">
-        <img src="img/feature_item/next.png" />
+        <img src="img/feature_item/next.png" alt="next" />
       </button>
     </section>
+    <section class="about">
+      <div class="container">
+        <h3 class="about__subtitle">We Provide Best Services</h3>
+        <h2 class="about__title">About Us</h2>
+        <img src="img/about/about_shape.png" alt="Shape" />
+        <p class="about__descr">
+          Injected humour, or randomised words which don't look evethe Internet
+          tend to repeat predefined chunks as necessary, making this the first n
+          slightly believable. If Lorem Ipsum, you need to be sure there isn't
+          on the Internet tend to repeat predefined chunks as you are going to
+          use a passage of Lorem Ipsum, you need to be sure there isn't on the
+          Internet tend to repeat predefined chunks as necessary, making this
+          the first true generator on the Internet tend to repeat predefined
+          chunks as you
+        </p>
+        <!-- ACCORDION -->
+        <div class="accordion">
+          <div class="trigger">
+            <input type="checkbox" id="checkbox-1" name="checkbox-1" />
+            <label for="checkbox-1" class="checkbox">
+              1. Our Restaurant provide best service ever to our customer
+              <i></i>
+            </label>
+            <div class="content">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                quidem placeat odio blanditiis cumque, cupiditate ad fugiat
+                voluptatem soluta, reprehenderit doloremque ea numquam nulla
+                expedita dolorem impedit veritatis ipsum accusantium.
+              </p>
+            </div>
+          </div>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+          <div class="trigger">
+            <input type="checkbox" id="checkbox-2" name="checkbox-2" />
+            <label for="checkbox-2" class="checkbox">
+              2. We have best Restaurant food menu alltime. <i></i>
+            </label>
+            <div class="content">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                quidem placeat odio blanditiis cumque, cupiditate ad fugiat
+                voluptatem soluta, reprehenderit doloremque ea numquam nulla
+                expedita dolorem impedit veritatis ipsum accusantium.
+              </p>
+            </div>
+          </div>
+
+          <div class="trigger">
+            <input type="checkbox" id="checkbox-3" name="checkbox-3" />
+            <label for="checkbox-3" class="checkbox">
+              3. Our Restaurant provide Home Delivary service to our customer.
+              <i></i>
+            </label>
+            <div class="content">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                quidem placeat odio blanditiis cumque, cupiditate ad fugiat
+                voluptatem soluta, reprehenderit doloremque ea numquam nulla
+                expedita dolorem impedit veritatis ipsum accusantium.
+              </p>
+            </div>
+          </div>
+
+          <div class="trigger">
+            <input type="checkbox" id="checkbox-4" name="checkbox-4" />
+            <label for="checkbox-4" class="checkbox">
+              4. Restaurant Located nearby your destination. <i></i>
+            </label>
+            <div class="content">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                quidem placeat odio blanditiis cumque, cupiditate ad fugiat
+                voluptatem soluta, reprehenderit doloremque ea numquam nulla
+                expedita dolorem impedit veritatis ipsum accusantium.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/about/cooker.png" alt="" class="about__cooker" />
+      <!-- ACCORDION -->
+    </section>
+    <section class="delivery">
+      <div class="container">
+        <h3 class="delivery__subtitle">3 Easy Steps To Get Home-Delivary</h3>
+        <h2 class="delivery__title">For Home Delivary</h2>
+        <img
+          src="img/devilery/delivery_shape.png"
+          alt=""
+          class="delivery__shape"
+        />
+        <div class="delivery__wrapper">
+          <div class="delivery__card">
+            <img src="img/devilery/cart.png" alt="" class="delivery__img" />
+            <h3 class="delivery__header">Select a Dish</h3>
+            <div class="delivery__descr">
+              Internet tend to repeat predefined chunks as necessary, making
+              this the first true on the Internet.
+            </div>
+          </div>
+          <div class="delivery__card">
+            <img src="img/devilery/payment.png" alt="" class="delivery__img" />
+            <h3 class="delivery__header">Online Payment</h3>
+            <div class="delivery__descr">
+              Internet tend to repeat predefined chunks as necessary, making
+              this the first true on the Internet.
+            </div>
+          </div>
+          <div class="delivery__card">
+            <img src="img/devilery/recevied.png" alt="" class="delivery__img" />
+            <h3 class="delivery__header">Recevied Delivary</h3>
+            <div class="delivery__descr">
+              Internet tend to repeat predefined chunks as necessary, making
+              this the first true on the Internet.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu">
+      <div class="container">
+        <h3 class="menu__subtitle">We Always Servie Teasty & Healthy Food</h3>
+        <h2 class="menu__title">Main Dish</h2>
+        <img src="img/menu/menu_shape.png" alt="" class="menu__shape" />
+        <!-- TABS -->
+
+        <div class="tabs">
+          <!--  Контейнер с вкладками   -->
+          <ul class="tab-header">
+            <li class="tab-header__item js-tab-trigger active" data-tab="1">
+              All
+            </li>
+            <li class="tab-header__item js-tab-trigger" data-tab="2">
+              Breakfast
+            </li>
+            <li class="tab-header__item js-tab-trigger" data-tab="3">Lunch</li>
+            <li class="tab-header__item js-tab-trigger" data-tab="4">Dinner</li>
+            <li class="tab-header__item js-tab-trigger" data-tab="5">Desart</li>
+            <li class="tab-header__item js-tab-trigger" data-tab="6">
+              Kids Menu
+            </li>
+          </ul>
+
+          <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+          <ul class="tab-content">
+            <li class="tab-content__item js-tab-content active" data-tab="1">
+              <div class="menu__wrapper">
+                <a href="#">
+                  <div class="menu__card">
+                    <img src="img/menu/burger.png" alt="" class="menu__img" />
+                    <div class="menu__descr">
+                      <div class="menu__name">
+                        <h3 class="menu__header">Chicken Burger</h3>
+                        <div class="menu__price">$10.50</div>
+                      </div>
+                      <div class="menu__text">
+                        Internet tend to repeat predefined chunks as necessary,
+                        making this Internet.
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="menu__card">
+                  <img src="img/menu/srispers.png" alt="" class="menu__img" />
+                  <div class="menu__descr">
+                    <div class="menu__name">
+                      <h3 class="menu__header">Santa Fe Crispers</h3>
+                      <i class="dots"></i>
+                      <div class="menu__price">$12.50</div>
+                    </div>
+                    <div class="menu__text">
+                      Internet tend to repeat predefined chunks as necessary,
+                      making this Internet.
+                    </div>
+                  </div>
+                </div>
+                <div class="menu__card">
+                  <img src="img/menu/dipper.png" alt="" class="menu__img" />
+                  <div class="menu__descr">
+                    <div class="menu__name">
+                      <h3 class="menu__short">Triple Dipper</h3>
+                      <i class="dots"></i>
+                      <div class="menu__price">$8.90</div>
+                    </div>
+                    <div class="menu__text">
+                      Internet tend to repeat predefined chunks as necessary,
+                      making this Internet.
+                    </div>
+                  </div>
+                </div>
+                <div class="menu__card">
+                  <img src="img/menu/fiery.png" alt="" class="menu__img" />
+                  <div class="menu__descr">
+                    <div class="menu__name">
+                      <h3 class="menu__short">Crispy Fiery</h3>
+                      <i class="dots"></i>
+                      <div class="menu__price">$6.90</div>
+                    </div>
+                    <div class="menu__text">
+                      Internet tend to repeat predefined chunks as necessary,
+                      making this Internet.
+                    </div>
+                  </div>
+                </div>
+                <div class="menu__card">
+                  <img src="img/menu/wings.png" alt="" class="menu__img" />
+                  <div class="menu__descr">
+                    <div class="menu__name">
+                      <h3 class="menu__header">Boneless Wings</h3>
+                      <i class="dots"></i>
+                      <div class="menu__price">$12.40</div>
+                    </div>
+                    <div class="menu__text">
+                      Internet tend to repeat predefined chunks as necessary,
+                      making this Internet.
+                    </div>
+                  </div>
+                </div>
+                <div class="menu__card">
+                  <img src="img/menu/bowl.png" alt="" class="menu__img" />
+                  <div class="menu__descr">
+                    <div class="menu__name">
+                      <h3 class="menu__header">Chicken Mex Bowl</h3>
+                      <i class="dots"></i>
+                      <div class="menu__price">$11.40</div>
+                    </div>
+                    <div class="menu__text">
+                      Internet tend to repeat predefined chunks as necessary,
+                      making this Internet.
+                    </div>
+                  </div>
+                </div>
+                <div class="menu__card">
+                  <img src="img/menu/turkey.png" alt="" class="menu__img" />
+                  <div class="menu__descr">
+                    <div class="menu__name">
+                      <h3 class="menu__header">California Turkey</h3>
+                      <i class="dots"></i>
+                      <div class="menu__price">$14.50</div>
+                    </div>
+                    <div class="menu__text">
+                      Internet tend to repeat predefined chunks as necessary,
+                      making this Internet.
+                    </div>
+                  </div>
+                </div>
+                <div class="menu__card">
+                  <img src="img/menu/pals.png" alt="" class="menu__img" />
+                  <div class="menu__descr">
+                    <div class="menu__name">
+                      <h3 class="menu__short">Pepper Pals</h3>
+                      <i class="dots"></i>
+                      <div class="menu__price">$14.50</div>
+                    </div>
+                    <div class="menu__text">
+                      Internet tend to repeat predefined chunks as necessary,
+                      making this Internet.
+                    </div>
+                  </div>
+                </div>
+                <div class="menu__card">
+                  <img src="img/menu/bbq.png" alt="" class="menu__img" />
+                  <div class="menu__descr">
+                    <div class="menu__name">
+                      <h3 class="menu__short">House BBQ</h3>
+                      <i class="dots"></i>
+                      <div class="menu__price">$18.30</div>
+                    </div>
+                    <div class="menu__text">
+                      Internet tend to repeat predefined chunks as necessary,
+                      making this Internet.
+                    </div>
+                  </div>
+                </div>
+                <div class="menu__card">
+                  <img src="img/menu/cake.png" alt="" class="menu__img" />
+                  <div class="menu__descr">
+                    <div class="menu__name">
+                      <h3 class="menu__header">Chocolate Cake</h3>
+                      <i class="dots"></i>
+                      <div class="menu__price">$13.30</div>
+                    </div>
+                    <div class="menu__text">
+                      Internet tend to repeat predefined chunks as necessary,
+                      making this Internet.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="tab-content__item js-tab-content" data-tab="2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum
+              rem laboriosam cum repudiandae natus corrupti?
+            </li>
+            <li class="tab-content__item js-tab-content" data-tab="3">
+              Далеко-далеко за словесными горами.
+            </li>
+            <li class="tab-content__item js-tab-content" data-tab="4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+              exercitationem vitae deleniti labore vel? Animi, rem blanditiis?
+              Quibusdam eveniet veniam, commodi blanditiis fuga exercitationem.
+              Temporibus, tempora. Velit odit vero hic?
+            </li>
+            <li
+              class="tab-content__item js-tab-content menu__deserts"
+              data-tab="5"
+            >
+              <div class="menu__card">
+                <img src="img/menu/cake.png" alt="" class="menu__img" />
+                <div class="menu__descr">
+                  <div class="menu__name">
+                    <h3 class="menu__header">Chocolate Cake</h3>
+                    <i class="dots"></i>
+                    <div class="menu__price">$13.30</div>
+                  </div>
+                  <div class="menu__text">
+                    Internet tend to repeat predefined chunks as necessary,
+                    making this Internet.
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="tab-content__item js-tab-content" data-tab="6">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+              exercitationem vitae deleniti labore vel? Animi, rem blanditiis?
+              Quibusdam eveniet veniam, commodi blanditiis fuga exercitationem.
+              Temporibus, tempora. Velit odit vero hic?
+            </li>
+          </ul>
+        </div>
+
+        <!-- TABS -->
+
+        <button class="btn btn_menu">Full Menu</button>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 

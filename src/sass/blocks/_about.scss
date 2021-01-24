@@ -1,0 +1,38 @@
+.about {
+  padding-top: 257px;
+  // padding-bottom: 120px;
+  position: relative;
+  // background: url("../img/about/cooker.png") right center/contain no-repeat;
+  // background-position: (100% 100%);
+  &__subtitle,
+  &__title {
+    color: #ff3a2d;
+    font-family: "Sacramento", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+  &__title {
+    font-family: "Lobster Two", sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+  }
+  &__descr {
+    color: #808080;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 795px;
+  }
+  &__cooker {
+    position: absolute;
+    right: 0;
+    top: -60%;
+    transform: translateY(73%);
+    z-index: -1;
+  }
+}

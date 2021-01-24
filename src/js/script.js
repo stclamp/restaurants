@@ -18,6 +18,7 @@ const slider = tns({
     }
   });
 
+
   document.querySelector('.prev').addEventListener('click', function () {
     slider.goTo('prev');
   });
@@ -39,4 +40,22 @@ $(document).ready(function(){
     });
 
     $('input.timepicker').timepicker({});
+
+
+    // ACCORDION    
+    $("#all").click(function () {
+        $('input:checkbox').not(this).prop('checked', this.checked);
+    });
+
+    // TABS
+    $('.js-tab-trigger').click(function() {
+        var id = $(this).attr('data-tab'),
+            content = $('.js-tab-content[data-tab="'+ id +'"]');
+        
+        $('.js-tab-trigger.active').removeClass('active'); // 1
+        $(this).addClass('active'); // 2
+        
+        $('.js-tab-content.active').removeClass('active'); // 3
+        content.addClass('active'); // 4
+     });
 });

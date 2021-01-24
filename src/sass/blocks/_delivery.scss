@@ -1,0 +1,68 @@
+.delivery {
+  background: url("../../img/devilery/deliv_bg.png") center center/cover
+    no-repeat;
+  min-height: 890px;
+  margin-top: 405px;
+  padding-bottom: 200px;
+  &__subtitle {
+    padding-top: 200px;
+    margin: 0;
+    text-align: center;
+    color: $main-color;
+    font-family: "Sacramento";
+    font-size: 36px;
+    font-weight: 400;
+  }
+  &__title {
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Lobster Two";
+    font-size: 36px;
+    font-weight: 400;
+  }
+  &__shape {
+    display: block;
+    margin: 10px auto 0 auto;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    background: #fff;
+    width: 370px;
+    min-height: 250px;
+    margin-right: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 77px;
+    padding: 80px 41px 52px 39px;
+  }
+  &__img {
+    display: block;
+    position: absolute;
+    top: -20%;
+    transform: translateY(20%);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__header {
+    margin-top: 80px;
+    color: $main-color;
+    font-family: "Lobster Two";
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+  }
+  &__descr {
+    color: #808080;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-top: 23px;
+  }
+}

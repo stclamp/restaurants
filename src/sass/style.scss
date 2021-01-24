@@ -1,5 +1,6 @@
 @import "libs/normalize";
 @import "libs/fonts";
+@import "libs/accordion";
 @import "base/variables";
 
 * {
@@ -25,5 +26,10 @@
 @import "blocks/buttons";
 @import "blocks/wellcome";
 @import "blocks/feature";
+@import "blocks/about";
+@import "blocks/accordion";
+@import "blocks/delivery";
+@import "blocks/menu";
+@import "blocks/tabs";
 
 @import "base/media";

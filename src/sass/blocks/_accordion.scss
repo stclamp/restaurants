@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+$wetasphalt: #fff;
+$belizehole: #000;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 50px 0 20px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.all {
+  text-align: center;
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked + label {
+      background-color: $belizehole;
+      color: white;
+
+      &:before {
+        content: "Close All";
+      }
+    }
+  }
+
+  label {
+    position: relative;
+    margin: 0;
+    padding: 5px 30px;
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+    background-color: white;
+    // border: 1px solid $belizehole;
+    // border-radius: 99px;
+
+    &:before {
+      content: "Open All";
+    }
+  }
+}
+
+.accordion {
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  float: left;
+  //   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+  .trigger {
+    #checkbox-1,
+    #checkbox-2,
+    #checkbox-3,
+    #checkbox-4 {
+      display: none;
+
+      &:checked + label {
+        color: #00c5d2;
+        background-color: #fff;
+
+        i {
+          &:before {
+            background-color: #00c5d2;
+            transform: translate(5px, 8px) rotate(45deg);
+          }
+
+          &:after {
+            background-color: #00c5d2;
+            transform: translate(-5px, 8px) rotate(-45deg);
+          }
+        }
+      }
+    }
+
+    .checkbox {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+      color: #000;
+      cursor: pointer;
+      background-color: #fff;
+      transition: 0.2s all;
+      &:hover {
+        color: #00c5d2;
+      }
+
+      i {
+        position: absolute;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        right: 20px;
+        //float: right;
+
+        &:before,
+        &:after {
+          position: absolute;
+          content: "";
+          width: 14px;
+          height: 1px;
+          background-color: black;
+          transition: transform 250ms ease;
+        }
+
+        &:before {
+          transform: translate(-5px, 8px) rotate(45deg);
+        }
+
+        &:after {
+          transform: translate(5px, 8px) rotate(-45deg);
+        }
+      }
+    }
+
+    .content {
+      position: relative;
+      max-height: 1px;
+      padding: 0;
+      overflow-y: scroll;
+      font-size: 14px;
+      font-weight: 40;
+      line-height: 1.5;
+      background-color: #fff;
+      transition: max-height 250ms ease-in-out;
+
+      h3 {
+        margin: 30px 0 15px 30px;
+      }
+
+      p {
+        margin: 0 30px 30px;
+      }
+    }
+  }
+}
+
+#checkbox-1:checked ~ .content,
+#checkbox-2:checked ~ .content,
+#checkbox-3:checked ~ .content,
+#checkbox-4:checked ~ .content {
+  max-height: 350px;
+  transition: max-height 500ms ease-in-out;
+}

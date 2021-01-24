@@ -1,5 +1,5 @@
 .feature {
-  padding: 45px 0 257px 0;
+  padding: 45px 0 0 0;
   position: relative;
   &__subtitle {
     text-align: center;
@@ -23,7 +23,7 @@
     margin: 11px auto 0 auto;
   }
   &__inner {
-    margin: 0 auto;
+    margin: 70px auto 0 auto;
     display: flex;
     justify-content: center;
     div {
@@ -32,12 +32,41 @@
         height: 230px;
       }
     }
+    &_title {
+      text-align: center;
+      color: #1c1c1c;
+      font-family: "Lobster Two";
+      font-size: 24px;
+      font-weight: 400;
+      margin-top: 34px;
+    }
+    &_price-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      margin-top: 11px;
+    }
+    &_price,
+    &_old-price {
+      margin-right: 10px;
+      color: #1c1c1c;
+      font-family: "Lobster Two";
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+    }
+    &_old-price {
+      font-size: 16px;
+      text-decoration: line-through;
+      align-self: center;
+    }
   }
   .prev,
   .next {
     position: absolute;
-    top: 265px;
-    // transform: translateY(100%);
+    top: 53%;
+    transform: translateY(38%);
     left: 25px;
     border: none;
     background: transparent;
