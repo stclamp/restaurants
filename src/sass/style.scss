@@ -32,4 +32,9 @@
 @import "blocks/menu";
 @import "blocks/tabs";
 @import "blocks/footer";
+@import "blocks/hamburger";
 @import "base/media";
+
+button[aria-label] {
+  display: flex !important;
+}

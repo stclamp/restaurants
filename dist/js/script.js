@@ -10,10 +10,16 @@ const slider = tns({
     loop: true,
     responsive: {
         1: {
-            nav: true   
+            nav: true,
+            items: 1,
+            navAsThumbnails: true  
+        },
+        768: {
+            items: 2
         },
         1200: {
-            nav: false
+            nav: false,
+            items: 5
         }
     }
   });
@@ -59,3 +65,35 @@ $(document).ready(function(){
         content.addClass('active'); // 4
      });
 });
+
+// HAMBURGER
+
+var x = document.getElementById("contain");
+
+x.addEventListener("click", myFunction);
+
+function myFunction() {
+  var element = document.getElementById("nav");
+  element.classList.toggle("open");
+  
+  x.classList.toggle("change");
+}
+
+// var y = document.getElementsByTagName("#nav li");
+// y.addEventListener("mouseover", myFunction2);
+
+// function myFunction2() {
+
+  
+//  x.classList.toggle("hover");
+  
+// }
+
+
+// x.addEventListener("mouseout", myFunction3);
+
+// function myFunction2() {
+  
+//  x.classList.toggle("hover");
+  
+// }
