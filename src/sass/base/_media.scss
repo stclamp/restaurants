@@ -95,6 +95,7 @@
   .container {
     width: 720px;
   }
+
   .promo {
     &__nav {
       background: transparent;
@@ -107,6 +108,9 @@
     }
     &__welcome {
       display: none;
+    }
+    #contain {
+      display: block;
     }
     &__tel {
       display: none;
