@@ -1,6 +1,6 @@
 const slider = tns({
     container: '.feature__inner',
-    items: 5,
+    items: 3,
     slideBy: 1,
     autoplay: false,
     controls: false,
@@ -19,6 +19,9 @@ const slider = tns({
         },
         1200: {
             nav: false,
+            items: 3
+        },
+        1400: {
             items: 5
         }
     }
@@ -64,16 +67,17 @@ $(document).ready(function(){
         $('.js-tab-content.active').removeClass('active'); // 3
         content.addClass('active'); // 4
      });
+
 });
 
 // HAMBURGER
 
-var x = document.getElementById("contain");
+let x = document.getElementById("contain");
 
 x.addEventListener("click", myFunction);
 
 function myFunction() {
-  var element = document.getElementById("nav");
+  let element = document.getElementById("nav");
   element.classList.toggle("open");
   
   x.classList.toggle("change");

@@ -23,6 +23,9 @@
     a {
       color: $main-color;
       text-decoration: none;
+      &:hover {
+        border-bottom: 1px solid $main-color;
+      }
     }
   }
 
@@ -204,5 +207,8 @@
     align-self: center;
     margin-right: 34px;
     cursor: pointer;
+    &:hover {
+      color: $main-color;
+    }
   }
 }

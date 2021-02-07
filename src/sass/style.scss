@@ -38,3 +38,11 @@
 button[aria-label] {
   display: flex !important;
 }
+
+button[data-nav="4"] {
+  display: flex !important;
+}
+
+button[data-nav="5"] {
+  display: block !important;
+}
