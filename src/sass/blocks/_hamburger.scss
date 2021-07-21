@@ -41,7 +41,6 @@ header .wrapper {
 
 #nav li {
   float: none;
-  text-align: left;
   text-decoration: none;
   width: 100%;
   margin: 0;
@@ -107,6 +106,8 @@ header .wrapper {
 .hamburger__tel {
   color: #fff;
   text-align: center;
+  display: block;
+  margin: 0 auto;
   a {
     color: #fff;
     text-decoration: none;
